@@ -1,0 +1,7 @@
+node_modules
+dist
+*.local
+
+# Local env files — keep secrets/endpoints out of source control
+.env
+.env.*.local
