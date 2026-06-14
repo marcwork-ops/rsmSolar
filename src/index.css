@@ -1,0 +1,17 @@
+/* Smooth scrolling for in-page anchor navigation */
+html {
+  scroll-behavior: smooth;
+  /* Offset so sticky navbar doesn't cover section headings */
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
