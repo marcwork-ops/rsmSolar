@@ -144,9 +144,9 @@ export const CORE_VALUES = [
 
 /** Company contact details. */
 export const CONTACT = {
-  phones: ['+63 917 625 5906', '+63 916 300 1896'],
+  phones: ['+63 927 741 8235', '+63 947 786 7630'],
   // website: 'www.rsmenergy.com',
-  email: 'admin.rsmenergy@gmail.com',
+  email: 'sales.rsmenergy@gmail.com',
   address:
     '21st Floor Park Triangle Tower, 32nd Street cor. 11th Avenue, BGC, Fort Bonifacio, Taguig City, 1635',
 };
