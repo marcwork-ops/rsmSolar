@@ -82,7 +82,7 @@ export default function ContactSection() {
       setSnack({
         severity: 'success',
         message:
-          'Thank you! Your free quotation request has been received. Our team will reach out shortly.',
+          'Thank you! We received your request and will contact you within 1 business day to schedule your free site visit.',
       });
       setForm(INITIAL_FORM);
     } catch (err) {
@@ -90,7 +90,7 @@ export default function ContactSection() {
       setSnack({
         severity: 'error',
         message:
-          'Sorry, we could not submit your request. Please try again or contact us directly.',
+          'Sorry, your request did not go through. Please try again, or call or email us using the details on this page.',
       });
     } finally {
       setSubmitting(false);
@@ -103,7 +103,7 @@ export default function ContactSection() {
         <SectionHeading
           eyebrow="Free Quotation"
           title="Get My Free Quotation"
-          description="Tell us about your property and energy needs. Our team will prepare a tailored proposal with accurate pricing and system design."
+          description="Tell us a little about your property. We will schedule a free site visit, then send you a system design and an itemized quote."
         />
 
         <Grid container spacing={4}>
@@ -144,7 +144,7 @@ export default function ContactSection() {
                     <Grid item xs={12} sm={6}>
                       <TextField
                         fullWidth
-                        label="Location"
+                        label="City / Municipality"
                         value={form.location}
                         onChange={handleChange('location')}
                       />
@@ -153,7 +153,7 @@ export default function ContactSection() {
                       <TextField
                         fullWidth
                         type="number"
-                        label="Average monthly electricity bill (₱)"
+                        label="Average monthly electric bill (₱)"
                         value={form.bill}
                         onChange={handleChange('bill')}
                       />
@@ -193,7 +193,8 @@ export default function ContactSection() {
                         fullWidth
                         multiline
                         rows={4}
-                        label="Message"
+                        label="Anything else we should know?"
+                        placeholder="e.g. roof type, how often you get brownouts, planned aircon or EV"
                         value={form.message}
                         onChange={handleChange('message')}
                       />
@@ -206,7 +207,7 @@ export default function ContactSection() {
                         variant="contained"
                         disabled={submitting}
                       >
-                        {submitting ? 'Submitting…' : 'Submit Free Quotation Request'}
+                        {submitting ? 'Sending…' : 'Send My Free Quote Request'}
                       </Button>
                     </Grid>
                   </Grid>

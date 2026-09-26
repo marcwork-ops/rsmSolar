@@ -13,13 +13,13 @@ export default function AboutSection() {
             <SectionHeading
               align="left"
               eyebrow="About RSM"
-              title="Construction Excellence Meets Energy Independence"
+              title="Solar and Construction, Under One Roof"
             />
             <Typography sx={{ color: 'text.secondary', fontSize: '1.05rem', lineHeight: 1.8 }}>
-              RSM Resilient Energy Solutions Inc. is redefining what is possible at the intersection
-              of construction excellence and energy independence. The company delivers full-spectrum
-              solutions from new residential and commercial construction to integrated solar and
-              power systems.
+              RSM Resilient Energy Solutions is a construction and solar company based in BGC,
+              Taguig. Because we do both, we can handle the roof and structural work a solar
+              installation needs, not just the panels. We build for homes and businesses,
+              from new construction to adding solar to an existing property.
             </Typography>
           </Grid>
 
@@ -33,9 +33,8 @@ export default function AboutSection() {
                       <Typography variant="h6">Our Mission</Typography>
                     </Box>
                     <Typography sx={{ color: 'text.secondary', lineHeight: 1.75 }}>
-                      Ignite structural and energy autonomy for every client by delivering value
-                      through engineering mastery, strategic procurement, and construction
-                      excellence.
+                      Help Filipino homes and businesses lower their power costs and stay powered
+                      through brownouts, with systems that are designed and built properly.
                     </Typography>
                   </CardContent>
                 </Card>
@@ -48,8 +47,8 @@ export default function AboutSection() {
                       <Typography variant="h6">Our Vision</Typography>
                     </Box>
                     <Typography sx={{ color: 'text.secondary', lineHeight: 1.75 }}>
-                      To be a regional leader in integrated construction and solar EPC services while
-                      accelerating the transition to a sustainable grid.
+                      To become a trusted name in solar and construction across the region, and to
+                      help move the country toward cleaner, more reliable power.
                     </Typography>
                   </CardContent>
                 </Card>

@@ -14,7 +14,7 @@ export default function SolarTypesSection() {
         <SectionHeading
           eyebrow="Solar System Types"
           title="Choose the Right Solar System"
-          description="Each system suits a different goal. Here is a concise breakdown to help you decide what fits your property and priorities."
+          description="Each type suits a different goal. Here is how they compare. Not sure? Choose “Not sure” in the quote form and we will recommend one."
         />
 
         <Grid container spacing={3}>

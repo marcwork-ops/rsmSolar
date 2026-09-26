@@ -29,7 +29,7 @@ export const SECTIONS = {
 export const NAV_ITEMS: { label: string; target: string }[] = [
   { label: 'Home', target: SECTIONS.home },
   { label: 'Calculator', target: SECTIONS.calculator },
-  { label: 'EPC+', target: SECTIONS.epc },
+  { label: 'How We Work', target: SECTIONS.epc },
   { label: 'Solar Systems', target: SECTIONS.solar },
   { label: 'About', target: SECTIONS.about },
   { label: 'Contact', target: SECTIONS.contact },
@@ -47,78 +47,78 @@ export const CALCULATOR_RATES = {
 export const PROPERTY_TYPES = ['Residential', 'Commercial'] as const;
 export const SYSTEM_TYPES = ['On-grid', 'Hybrid', 'Off-grid', 'Not sure'] as const;
 
-/** Hero trust badges. */
+/** Hero trust badges — offer facts only; swap in proof (installs, licenses) once available. */
 export const TRUST_BADGES = [
-  'EPC Contractor',
-  'Solar + Construction Integration',
-  'Permitting & Documentation',
-  'Residential and Commercial Solutions',
+  '₱0 Upfront Financing Available',
+  'Permits & Paperwork Handled',
+  'One Team, Site Visit to Switch-On',
+  'Homes and Businesses',
 ];
 
-/** "Zero Cash Out" financial loop cards. */
+/** "Zero Cash Out" financing cards (homeowner-facing only). */
 export const ZERO_CASH_OUT_CARDS = [
   {
-    title: '₱0.00 Required Upfront Upgrade',
-    body: 'Homeowners bypass capital expense hurdles by matching solar financing amortization directly with immediate energy savings.',
+    title: '₱0 Upfront',
+    body: 'Start without a big payment. Your solar system is financed, so there is no down payment to get it installed.',
   },
   {
-    title: 'Structured Equipment Loans',
-    body: 'Clients can assume immediate physical control of their solar system with zero initial down-payment requirement under a structured solar equipment loan model.',
+    title: 'Yours to Use from Day One',
+    body: 'The system is installed and running on your property right away while you pay it off monthly.',
   },
   {
-    title: 'Self-Funding Amortizations',
-    body: 'Monthly amortization can be offset by reductions in monthly electricity bills, helping the system pay for itself over time.',
-  },
-  {
-    title: 'Annualized Investor Return',
-    body: 'The structure may provide underwriting partners a low-volatility annualized IRR target of 8.5% to 10.0%, depending on final agreement and project economics.',
-  },
-  {
-    title: 'Asset Protection & Security',
-    body: 'Systems are installed behind-the-meter on private properties, serving as physical asset backing for the funding structure.',
+    title: 'Paid from Your Savings',
+    body: 'Your monthly payment is designed to be offset by the drop in your electric bill, so the system helps pay for itself over time.',
   },
 ];
 
-/** EPC+ pillar cards. */
+/** "How We Work" pillar cards. */
 export const EPC_CARDS = [
   {
-    title: 'Engineering',
-    body: 'Precision design optimized for maximum performance and efficiency.',
+    title: 'Design',
+    body: 'We size and design your system around your roof, your usage, and your budget.',
   },
   {
-    title: 'Procurement',
-    body: 'Strategic sourcing ensures quality materials and competitive economics.',
+    title: 'Equipment',
+    body: 'We source the panels, inverters, and batteries, so you do not have to compare suppliers.',
   },
   {
-    title: 'Construction',
-    body: 'Flawless execution delivered on schedule and within budget.',
+    title: 'Installation',
+    body: 'We build and install the system, including any roof or structural work.',
   },
   {
-    title: 'Permitting',
-    body: 'Complete regulatory compliance and documentation support.',
+    title: 'Permits & Paperwork',
+    body: 'We handle the permits and utility documents needed to switch your system on.',
   },
+];
+
+/** "What happens next" steps shown under the How We Work cards. */
+export const PROCESS_STEPS = [
+  { title: 'Free site visit', body: 'We check your roof, wiring, and electric bills.' },
+  { title: 'Design & quote', body: 'You get a system design and an itemized price.' },
+  { title: 'Permits & install', body: 'We file the paperwork and install the system.' },
+  { title: 'Switch on', body: 'We test everything and walk you through it.' },
 ];
 
 /** Solar system type explanations. */
 export const SOLAR_TYPES = [
   {
     title: 'On-Grid Solar',
-    body: 'Connected to the utility grid. Best for reducing monthly electricity bills. It usually does not provide backup power during outages unless paired with batteries.',
+    body: 'Connected to the utility grid. The lowest-cost way to cut your monthly bill. It does not keep your power on during brownouts.',
   },
   {
     title: 'Hybrid Solar',
-    body: 'Connected to the grid and includes batteries. Best for clients who want savings plus backup power during brownouts or outages.',
+    body: 'Connected to the grid, with batteries. Cuts your bill and keeps essential power on during brownouts.',
   },
   {
     title: 'Off-Grid Solar',
-    body: 'Completely independent from the utility grid. Best for remote areas or properties without reliable grid access. It requires enough solar panels and batteries to power the property independently.',
+    body: 'Runs fully on its own panels and batteries, with no grid connection. Best for remote properties without reliable power.',
   },
 ];
 
 /** Solar recommendation chips. */
 export const SOLAR_RECOMMENDATIONS = [
   { label: 'Best for savings', value: 'On-grid' },
-  { label: 'Best for backup power', value: 'Hybrid' },
+  { label: 'Best for brownout backup', value: 'Hybrid' },
   { label: 'Best for remote areas', value: 'Off-grid' },
 ];
 
@@ -126,19 +126,43 @@ export const SOLAR_RECOMMENDATIONS = [
 export const CORE_VALUES = [
   {
     title: 'Integrity',
-    body: 'Transparency and accountability in every decision and project phase.',
+    body: 'Clear quotes and straight answers, including when solar is not the right fit for you.',
   },
   {
     title: 'Reliability',
-    body: 'Systems engineered for endurance, predictable generation, and lasting structural integrity.',
+    body: 'Systems designed for Philippine weather and built to keep producing for years.',
   },
   {
     title: 'Excellence',
-    body: 'Robust, scalable power systems and construction delivered on time and within budget.',
+    body: 'Careful work on every job, whether it is a home rooftop or a commercial building.',
   },
   {
     title: 'Innovation',
-    body: 'Next-generation engineering and project management for client advantage.',
+    body: 'We keep up with new panel, battery, and inverter technology so you do not have to.',
+  },
+];
+
+/** Frequently asked questions. */
+export const FAQS = [
+  {
+    q: 'How much does a solar system cost?',
+    a: 'It depends on your electricity use, roof, and the type of system you choose. Use the calculator above for a rough size, then request a free quote for an itemized price. Financing with ₱0 upfront is also available, subject to approval.',
+  },
+  {
+    q: 'Will solar keep my power on during brownouts?',
+    a: 'Only if the system has batteries. An on-grid system shuts off during a grid outage for safety. A hybrid or off-grid system with batteries keeps your power running.',
+  },
+  {
+    q: 'What is net metering?',
+    a: 'Net metering lets you send extra solar power back to the grid and get credited for it on your bill. We prepare the paperwork your utility requires as part of the installation.',
+  },
+  {
+    q: 'Do I need to own the property?',
+    a: 'In most cases, yes, or you need written permission from the owner. We will confirm what is needed during your free site visit.',
+  },
+  {
+    q: 'What happens after I request a quote?',
+    a: 'We contact you to schedule a free site visit. After that, you receive a system design and an itemized quote. There is no obligation to proceed.',
   },
 ];
 

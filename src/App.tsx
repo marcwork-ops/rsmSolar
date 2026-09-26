@@ -7,6 +7,7 @@ import EPCSection from './components/EPCSection';
 import SolarTypesSection from './components/SolarTypesSection';
 import AboutSection from './components/AboutSection';
 import ValuesSection from './components/ValuesSection';
+import FAQSection from './components/FAQSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
@@ -22,6 +23,7 @@ export default function App() {
         <SolarTypesSection />
         <AboutSection />
         <ValuesSection />
+        <FAQSection />
         <ContactSection />
       </main>
       <Footer />

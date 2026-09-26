@@ -37,14 +37,14 @@ export default function HeroSection() {
                 letterSpacing: '0.05em',
               }}
             >
-              EPC CONTRACTOR · CONSTRUCTION + SOLAR + POWER
+              SOLAR FOR HOMES AND BUSINESSES
             </Typography>
 
             <Typography
               variant="h1"
               sx={{ fontSize: { xs: '2.2rem', sm: '3rem', md: '3.6rem' }, mb: 3 }}
             >
-              Powering Resilient Homes and Businesses with Solar EPC Solutions
+              Cut Your Electric Bill by Up to 60%, with ₱0 Upfront
             </Typography>
 
             <Typography
@@ -56,9 +56,8 @@ export default function HeroSection() {
                 mb: 4,
               }}
             >
-              RSM Resilient Energy Solutions is an EPC contractor delivering integrated
-              construction, solar, and power systems for clients seeking energy independence,
-              reliability, and long-term savings.
+              We design, permit, and install solar for homes and businesses across the Philippines.
+              One team handles everything, from the first site visit to switch-on.
             </Typography>
 
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>

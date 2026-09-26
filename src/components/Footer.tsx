@@ -36,8 +36,8 @@ export default function Footer() {
               {COMPANY_TAGLINE}
             </Typography>
             <Typography sx={{ lineHeight: 1.7, maxWidth: 380 }}>
-              An EPC contractor delivering integrated construction, solar, and power systems for
-              energy independence and long-term savings.
+              Solar design, permits, and installation for homes and businesses across the
+              Philippines, with ₱0 upfront financing available.
             </Typography>
           </Grid>
 

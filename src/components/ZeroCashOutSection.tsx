@@ -17,8 +17,8 @@ export default function ZeroCashOutSection() {
         <SectionHeading
           light
           eyebrow="Financing"
-          title="The “Zero Cash Out” Financial Loop"
-          description="Start your solar upgrade with ₱0 required upfront capital through a structured solar financing approach designed to match amortization with energy savings."
+          title="Go Solar with ₱0 Upfront"
+          description="Finance your system and pay monthly. The payment is designed to be covered by what you save on your electric bill."
         />
 
         <Grid container spacing={3}>
@@ -71,8 +71,8 @@ export default function ZeroCashOutSection() {
             border: '1px solid rgba(255,255,255,0.12)',
           }}
         >
-          Financing terms, investor returns, and eligibility are subject to final assessment,
-          contract terms, and underwriting approval.
+          Financing is subject to approval. Terms and actual savings depend on your site assessment
+          and final contract.
         </Alert>
       </Container>
     </Box>

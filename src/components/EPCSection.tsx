@@ -3,7 +3,7 @@ import EngineeringIcon from '@mui/icons-material/Engineering';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
-import { EPC_CARDS, SECTIONS } from '../constants';
+import { EPC_CARDS, PROCESS_STEPS, SECTIONS } from '../constants';
 import SectionHeading from './SectionHeading';
 
 // Map each EPC pillar to an icon (kept here so constants stay data-only).
@@ -19,9 +19,9 @@ export default function EPCSection() {
     <Box id={SECTIONS.epc} sx={{ py: { xs: 7, md: 11 } }}>
       <Container maxWidth="lg">
         <SectionHeading
-          eyebrow="Single-Source Accountability"
-          title="Why EPC+ Matters"
-          description="Traditional construction fragments responsibility. RSM eliminates that risk through an integrated Engineering, Procurement, Construction, Permitting, and Documentation model. One team. One goal. Single-source accountability from start to finish."
+          eyebrow="How We Work"
+          title="One Team from Start to Finish"
+          description="No juggling separate designers, suppliers, installers, and permit runners. We handle all of it, so there is one team to call if anything comes up."
         />
 
         <Grid container spacing={3}>
@@ -51,6 +51,40 @@ export default function EPCSection() {
                   </Typography>
                 </CardContent>
               </Card>
+            </Grid>
+          ))}
+        </Grid>
+
+        {/* What happens next */}
+        <Typography variant="h6" sx={{ textAlign: 'center', mt: { xs: 6, md: 8 }, mb: 3 }}>
+          What happens after you request a quote
+        </Typography>
+        <Grid container spacing={3}>
+          {PROCESS_STEPS.map((step, i) => (
+            <Grid item xs={12} sm={6} md={3} key={step.title}>
+              <Box sx={{ display: 'flex', gap: 2 }}>
+                <Box
+                  sx={{
+                    width: 36,
+                    height: 36,
+                    flexShrink: 0,
+                    borderRadius: '50%',
+                    display: 'grid',
+                    placeItems: 'center',
+                    bgcolor: 'primary.main',
+                    color: 'white',
+                    fontWeight: 700,
+                  }}
+                >
+                  {i + 1}
+                </Box>
+                <Box>
+                  <Typography sx={{ fontWeight: 600, mb: 0.5 }}>{step.title}</Typography>
+                  <Typography sx={{ color: 'text.secondary', fontSize: '0.92rem', lineHeight: 1.6 }}>
+                    {step.body}
+                  </Typography>
+                </Box>
+              </Box>
             </Grid>
           ))}
         </Grid>

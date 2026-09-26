@@ -77,7 +77,7 @@ export default function CalculatorSection() {
         <SectionHeading
           eyebrow="Solar Savings Calculator"
           title="Estimate Your Solar Savings"
-          description="Enter your average monthly electricity bill to get a quick estimate of your possible solar savings and recommended system size."
+          description="Enter your average monthly electric bill for a quick estimate of your savings and the system size you may need."
         />
 
         <Grid container spacing={4}>
@@ -91,7 +91,7 @@ export default function CalculatorSection() {
 
                 <TextField
                   fullWidth
-                  label="Average monthly electricity bill"
+                  label="Average monthly electric bill"
                   type="number"
                   value={bill}
                   onChange={(e) => setBill(e.target.value)}
@@ -108,6 +108,7 @@ export default function CalculatorSection() {
                   label="Property type"
                   value={propertyType}
                   onChange={(e) => setPropertyType(e.target.value)}
+                  helperText="Helps us prepare your quote. Does not change this estimate."
                   sx={{ mb: 3 }}
                 >
                   {PROPERTY_TYPES.map((option) => (
@@ -123,6 +124,7 @@ export default function CalculatorSection() {
                   label="System type preference"
                   value={systemType}
                   onChange={(e) => setSystemType(e.target.value)}
+                  helperText="Helps us prepare your quote. Does not change this estimate."
                 >
                   {SYSTEM_TYPES.map((option) => (
                     <MenuItem key={option} value={option}>
@@ -171,7 +173,7 @@ export default function CalculatorSection() {
                     <CardContent sx={{ p: 3 }}>
                       <Typography sx={{ fontWeight: 600, mb: 1 }}>Recommended next step</Typography>
                       <Typography sx={{ fontSize: '0.9rem', opacity: 0.85, mb: 2 }}>
-                        Lock in a tailored design and accurate pricing.
+                        Get a design and exact price for your property. Free, with no obligation.
                       </Typography>
                       <Button
                         variant="contained"
